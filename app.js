@@ -6,7 +6,7 @@ const app = express();
 const helmet = require("helmet");
 const cors = require("cors");
 const rateLimiter = require("express-rate-limit");
-
+const xss = require("xss")
 //extra Packages
 const errorHandlerMiddleware = require("./middleware/error-handler.js");
 const notFound = require("./middleware/not-found");
